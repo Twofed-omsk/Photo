@@ -546,11 +546,12 @@ textarea {
 }
 
 .photo-text2 {
+  display: block;
   color: #9f9898;
   font-size: 14px;
   font-weight: 400;
   line-height: 23px;
-  margin-left: 70px;
+  margin-right: 8px;
 }
 
 .photo-block {
@@ -576,21 +577,43 @@ textarea {
   margin-bottom: 5px;
 }
 
-.photo-shere-icon {
+.photo-element__share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.photo-element-icon {
+  position: absolute;
+  margin: auto;
+}
+
+.prog {
+  width: 22px;
+  height: 22px;
+  display: inline;
   -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.23);
           box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.23);
   background-color: #b1aeae;
   border-radius: 50%;
-  padding: 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 4px;
 }
 
-.photo-shere-icon:hover {
+.prog:hover {
   background-color: #283e8f;
   cursor: pointer;
-}
-
-.photo-shere__image {
-  display: block;
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
