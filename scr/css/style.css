@@ -3,6 +3,7 @@
 }
 
 .navbar {
+  width: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e0e0e0), to(#ffffff));
   background-image: linear-gradient(to top, #e0e0e0 0%, #ffffff 100%);
 }
@@ -103,6 +104,19 @@ hr {
 .container {
   width: 1010px;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 780px;
+    width: 90%;
+  }
 }
 
 .search-block {
@@ -561,6 +575,7 @@ textarea {
 }
 
 .photo-element {
+  width: 217px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
   border: 1px solid rgba(0, 0, 0, 0.16);
