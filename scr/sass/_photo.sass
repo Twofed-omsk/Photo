@@ -1,5 +1,4 @@
 .photo
-  margin-top: 75px
   &-text1
     color: #979393
     font-size: 15px
@@ -15,8 +14,9 @@
     line-height: 23px
     margin-right: 8px
   &-block
+    margin-top: 75px
     display: grid
-    grid-template-columns: repeat(auto-fill, 217px )
+    grid-template-columns: repeat(4, 1fr)
     grid-column-gap: 39px
     grid-row-gap: 31px
     
@@ -50,5 +50,50 @@
   margin-left: 4px
   &:hover
    background-color: #283e8f
-   cursor: pointer      
+   cursor: pointer
+  &:hover .icon-content
+    display: block
+    animation: prog 0.7 ease forwards
+    opacity: 1
+      
+.icon-content
+  display: none
+  opacity: 0
+  position: absolute
+  top: calc(100% + 7px)
+  left: 215%
+  transform: translateX(-50%)
+  width: 110px
+  height: 22px
+  text-align: center
+  padding-left: 5px
+  border-radius: 5px
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15)
+  background: black
+  color: #fff
+  z-index: 9999
+  font-size: 13px
+  font-weight: 400
+  line-height: 23px
+.icon-arrow
+  position: absolute
+  z-index: 0
+  top: -14px
+  left: 20%
+  transform: translateX(-50%)
+  width: 15px
+  height: 15px
+  overflow: hidden  
+  &::before
+    content: ''
+    position: absolute
+    bottom: -4px
+    left: 50%
+    width: 10px
+    height: 10px
+    background-color: black
+    transform: translateX(-50%) rotate(45deg)
+    box-shadow: 8px 8px 9px -4px rgba(0,0,0,0.15)
+    
+
 

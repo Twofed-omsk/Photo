@@ -532,10 +532,6 @@ textarea {
   padding: 0.2em 0;
 }
 
-.photo {
-  margin-top: 75px;
-}
-
 .photo-text1 {
   color: #979393;
   font-size: 15px;
@@ -555,10 +551,11 @@ textarea {
 }
 
 .photo-block {
+  margin-top: 75px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (217px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 217px);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 39px;
   grid-row-gap: 31px;
 }
@@ -615,5 +612,75 @@ textarea {
 .prog:hover {
   background-color: #283e8f;
   cursor: pointer;
+}
+
+.prog:hover .icon-content {
+  display: block;
+  -webkit-animation: prog 0.7 ease forwards;
+          animation: prog 0.7 ease forwards;
+  opacity: 1;
+}
+
+.icon-content {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 215%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 110px;
+  height: 22px;
+  text-align: center;
+  padding-left: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+  background: black;
+  color: #fff;
+  z-index: 9999;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.icon-arrow {
+  position: absolute;
+  z-index: 0;
+  top: -14px;
+  left: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.icon-arrow::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  -webkit-box-shadow: 8px 8px 9px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 8px 8px 9px -4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-block {
+  margin-top: 63px;
+  padding-bottom: 51px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  color: #8b8a8a;
+  font-family: "Arial MT";
+  font-size: 17px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
