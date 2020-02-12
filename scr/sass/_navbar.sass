@@ -6,21 +6,6 @@
   &-menu
     display: flex
     align-items: end
-  &-logo
-    font-size: 49px
-    font-weight: 400 
-    font-family: "Lobster"
-    color: #676666
-    margin-top: 37px
-    margin-bottom: 28px
-
-  &-block
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    // height: 100px
-
-  &-menu
     &-element
       width: 108px
       height: 100%
@@ -33,9 +18,46 @@
       text-decoration: none
       position: relative
       transition: 0.2s
-      &:hover
-        background-image: linear-gradient(to top, #c9c0c0 0%, #ffffff 100%)
-        &:after
+      &__text
+        text-shadow: 1px 1px 0 #ffffff
+        color: #545454
+        font-size: 16px
+        font-weight: 400
+        line-height: 23px        
+      &__icon
+        display: block
+        margin: auto
+  &-logo
+    font-size: 49px
+    font-weight: 400 
+    font-family: "Lobster"
+    color: #676666
+    margin-top: 37px
+    margin-bottom: 28px
+  &-block
+    display: flex
+    flex-direction: row
+    justify-content: space-between  
+@media ( max-width: 768px)  
+  .navbar
+    &-logo
+      font-size: 45px
+      margin-bottom: 10px
+      margin-top: 20px
+    &-block
+      flex-direction: column
+      align-items: center
+    &-menu
+      width: 100% 
+      align-items: flex-end
+      &-element
+        width: 25%
+        padding-top: 20px
+@media ( min-width: 1200px)
+  .navbar-menu-element
+    &:hover
+      background-image: linear-gradient(to top, #c9c0c0 0%, #ffffff 100%)
+      &:after
          display: inline-block
          position: absolute
          content: ''
@@ -47,13 +69,7 @@
          z-index: 999
          bottom: 0
 
-      &__text
-        text-shadow: 1px 1px 0 #ffffff
-        color: #545454
-        font-size: 16px
-        font-weight: 400
-        line-height: 23px
-        
-      &__icon
-        display: block
-        margin: auto
+    
+      
+
+
