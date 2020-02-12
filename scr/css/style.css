@@ -550,8 +550,8 @@ textarea {
   margin-top: 75px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(210px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  -ms-grid-columns: (minmax(217px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
   grid-column-gap: 39px;
   grid-row-gap: 31px;
 }
@@ -576,6 +576,7 @@ textarea {
 
 .photo-element {
   width: 217px;
+  height: 279px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
   border: 1px solid rgba(0, 0, 0, 0.16);
@@ -646,6 +647,9 @@ textarea {
   height: 22px;
   text-align: center;
   padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 3px;
   border-radius: 5px;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
