@@ -639,6 +639,7 @@ textarea {
 }
 
 .photo-text1 {
+  display: block;
   color: #979393;
   font-size: 15px;
   font-weight: 400;
@@ -764,6 +765,9 @@ textarea {
 @media (max-width: 768px) {
   .photo-block {
     place-items: center;
+  }
+  .photo-text1 {
+    margin-left: 5px;
   }
   .prog {
     width: 25px;
