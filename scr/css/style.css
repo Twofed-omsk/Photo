@@ -765,6 +765,10 @@ textarea {
   .photo-block {
     place-items: center;
   }
+  .prog {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (min-width: 1200px) {
