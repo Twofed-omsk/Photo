@@ -643,6 +643,7 @@ textarea {
   font-size: 15px;
   font-weight: 400;
   line-height: 23px;
+  margin-left: 15px;
 }
 
 .photo-text2 {
@@ -686,8 +687,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .prog {
